@@ -10,13 +10,13 @@ cache:
 
 before_install:
 #  配置git
-  git config --global user.name "fXy-during"
-  git config --global user.email "fxy1044667399@163.com"
-  cnpm install umi
+  - git config --global user.name "fXy-during"
+  - git config --global user.email "fxy1044667399@163.com"
+  - cnpm install umi
 
 install: 
-  cnpm install 
+  - cnpm install 
 
 
 script: 
-  umi build
+  - umi build
