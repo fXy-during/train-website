@@ -12,6 +12,7 @@ before_install:
 #  配置git
   - git config --global user.name "fXy-during"
   - git config --global user.email "fxy1044667399@163.com"
+  - npm install -g cnpm --registry=https://registry.npm.taobao.org
   - cnpm install umi
 
 install: 
