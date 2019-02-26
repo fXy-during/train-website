@@ -56,8 +56,8 @@ export const Content00DataSource = {
             children:
               'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
           },
-          title: { className: 'content0-title', children: '一站式业务接入' },
-          content: { children: '支付、结算、核算接入产品效率翻四倍' },
+          title: { className: 'content0-title', children: '专升本培训' },
+          content: { children: '' },
         },
       },
       {
@@ -73,9 +73,9 @@ export const Content00DataSource = {
           },
           title: {
             className: 'content0-title',
-            children: '一站式事中风险监控',
+            children: '教师资格证培训',
           },
-          content: { children: '在所有需求配置环节事前风险控制和质量控制能力' },
+          content: { children: '' },
         },
       },
       {
@@ -89,8 +89,70 @@ export const Content00DataSource = {
             children:
               'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
           },
-          title: { className: 'content0-title', children: '一站式数据运营' },
-          content: { children: '沉淀产品接入效率和运营小二工作效率数据' },
+          title: { className: 'content0-title', children: '考研培训（敬请期待）' },
+          content: { children: '' },
+        },
+      },
+    ],
+  },
+};
+export const Content60DataSource = {
+  wrapper: { className: 'home-page-wrapper content6-wrapper' },
+  page: { className: 'home-page content6' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper',
+    children: [{ name: 'title', children: '校区' }],
+  },
+  block: {
+    className: 'block-wrapper',
+    children: [
+      {
+        name: 'block0',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://www.wanxue.cn/images/pic4.png',
+          },
+          title: { className: 'content6-title', children: '' },
+          content: { children: '' },
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://www.wanxue.cn/images/pic5.png',
+          },
+          title: {
+            className: 'content6-title',
+            children: '',
+          },
+          content: { children: '' },
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://www.wanxue.cn/images/pic6.png',
+          },
+          title: { className: 'content6-title', children: '' },
+          content: { children: '' },
         },
       },
     ],
@@ -275,7 +337,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+              '',
           },
         },
       },
@@ -302,7 +364,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+              '',
           },
         },
       },
@@ -329,7 +391,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+              '',
           },
         },
       },
@@ -356,7 +418,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
+              '',
           },
         },
       },
@@ -383,7 +445,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
+              '',
           },
         },
       },
@@ -410,7 +472,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+              '',
           },
         },
       },

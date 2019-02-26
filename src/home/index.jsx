@@ -15,6 +15,7 @@ import {
   Banner01DataSource,
   Content00DataSource,
   Content50DataSource,
+  Content60DataSource,
   Content30DataSource,
   Footer10DataSource,
 } from './data.source';
@@ -74,12 +75,18 @@ export default class Home extends React.Component {
         dataSource={Content00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content5
-        id="Content5_0"
-        key="Content5_0"
-        dataSource={Content50DataSource}
+      <Content0
+        id="Content6_0"
+        key="Content6_0"
+        dataSource={Content60DataSource}
         isMobile={this.state.isMobile}
       />,
+      // <Content5
+      //   id="Content5_0"
+      //   key="Content5_0"
+      //   dataSource={Content50DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
       <Content3
         id="Content3_0"
         key="Content3_0"
