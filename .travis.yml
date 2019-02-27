@@ -28,6 +28,7 @@ script:
 - umi build
 
 after_success:
+- ls -al ~
 - chmod 600 ~/.ssh/id_rsa
 - tar -zcf zhangDaYe.tar.gz ./dist
 - scp zhangDaYe.tar.gz root@120.79.188.124:/www/
