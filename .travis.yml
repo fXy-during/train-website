@@ -21,7 +21,7 @@ script:
 after_success:
 - ls -al ~/.ssh
 - chmod 600 ~/.ssh/id_rsa
-- tar -zcf zhangDaYe.tar.gz ./dist
-- scp zhangDaYe.tar.gz root@120.79.188.124:/www/
-# - ssh root@120.79.188.124 -o StrictHostKeyChecking=no  'cd /www && rm -rf ./zhangDaYe
-#   && tar -xzf zhangDaYe.tar.gz && rm -rf zhangDaYe.tar.gz && exit 0'
+- tar -zcf dist.tar.gz ./dist
+- scp dist.tar.gz root@120.79.188.124:/www/
+- ssh root@120.79.188.124 -o StrictHostKeyChecking=no  'cd /www && rm -rf ./zhangDaYe
+  && tar -xzf dist.tar.gz && rm -rf dist.tar.gz && mv dist zhangDaYe && exit 0'
