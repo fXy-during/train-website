@@ -26,11 +26,13 @@ install:
 
 
 script: 
-  - umi build
-
+  # - umi build
+  - true
 
 # before_deploy:
 #   - rm -rf /www/zhangDaYe/*
 
-# after_success: 
-#   - scp -r dist root@120.79.188.124:/www/zhangDaYe 
+after_success: 
+    - git add .
+    - git commit -m "feat: travis commit"
+    - git push origin master 
