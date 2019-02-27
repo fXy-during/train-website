@@ -13,7 +13,7 @@ addons:
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_6586bb378001_key -iv $encrypted_6586bb378001_iv
-  -in ssh_id.enc -out ./ssh_id -d
+  -in id_rsa.enc -out ./id_rsa -d
 # - chmod 600 ~/.ssh/id_rsa
 # - echo -e "Host 120.79.188.124\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - git config --global user.name "fXy-during"
@@ -28,6 +28,7 @@ script:
 - umi build
 
 after_success:
+- chmod 600 ~/.ssh/id_rsa
 - tar -zcf zhangDaYe.tar.gz ./dist
 - scp zhangDaYe.tar.gz root@120.79.188.124:/www/
 - ssh root@120.79.188.124 -o StrictHostKeyChecking=no  'cd /www && rm -rf ./zhangDaYe && tar -xzf ./zhangDaYe.tar.gz && rm -rf zhangDaYe.tar.gz && exit'
