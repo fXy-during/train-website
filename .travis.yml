@@ -21,3 +21,10 @@ install:
 
 script: 
   - umi build
+
+
+before_deploy:
+  - rm -rf /www/zhangDaYe/*
+
+delop: 
+  - cp -r ./dist/* /www/zhangDaYe/
