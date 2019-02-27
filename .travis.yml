@@ -26,5 +26,5 @@ script:
 before_deploy:
   - rm -rf /www/zhangDaYe/*
 
-deploy: 
+after_success: 
   - cp -r ./dist/* /www/zhangDaYe/
