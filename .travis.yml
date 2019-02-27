@@ -27,4 +27,4 @@ before_deploy:
   - rm -rf /www/zhangDaYe/*
 
 after_success: 
-  - cp -r ./dist/* /www/zhangDaYe/
+  - scp -r dist root@120.79.188.124:/www/zhangDaYe 
