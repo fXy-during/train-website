@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "8"
 
+# os: windows
+
 cache:
   apt: true
   directories:
@@ -27,8 +29,8 @@ script:
   - umi build
 
 
-before_deploy:
-  - rm -rf /www/zhangDaYe/*
+# before_deploy:
+#   - rm -rf /www/zhangDaYe/*
 
-after_success: 
-  - scp -r dist root@120.79.188.124:/www/zhangDaYe 
+# after_success: 
+#   - scp -r dist root@120.79.188.124:/www/zhangDaYe 
