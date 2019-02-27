@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
   page: { className: 'home-page' },
@@ -511,19 +512,26 @@ export const Footer10DataSource = {
             <span>
               <p>
                 {' '}
-                <a href="#">产品更新记录</a>{' '}
-              </p>{' '}
+                <a href="#">产品更新记录</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">API文档</a>{' '}
-              </p>{' '}
+                <a href="#">API文档</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">快速入门</a>{' '}
-              </p>{' '}
+                <a href="#">快速入门</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">参考指南</a>{' '}
+                <a href="#">参考指南</a>
+                {' '}
               </p>
             </span>
           ),
@@ -540,11 +548,14 @@ export const Footer10DataSource = {
             <span>
               <p>
                 {' '}
-                <a href="#">FAQ</a>{' '}
-              </p>{' '}
+                <a href="#">FAQ</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">联系我们</a>{' '}
+                <a href="#">联系我们</a>
+                {' '}
               </p>
             </span>
           ),
@@ -561,19 +572,26 @@ export const Footer10DataSource = {
             <span>
               <p>
                 {' '}
-                <a href="#">Ant Design</a>{' '}
-              </p>{' '}
+                <a href="#">Ant Design</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">Ant Design</a>{' '}
-              </p>{' '}
+                <a href="#">Ant Design</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">Ant Design</a>{' '}
-              </p>{' '}
+                <a href="#">Ant Design</a>
+                {' '}
+              </p>
+              {' '}
               <p>
                 {' '}
-                <a href="#">Ant Design</a>{' '}
+                <a href="#">Ant Design</a>
+                {' '}
               </p>
             </span>
           ),
@@ -587,7 +605,11 @@ export const Footer10DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
+        ©2018 by
+        {' '}
+        <a href="https://motion.ant.design">Ant Motion</a>
+        {' '}
+All Rights
         Reserved
       </span>
     ),

@@ -6,7 +6,7 @@ import { enquireScreen } from 'enquire-js';
 import Nav0 from './Nav0';
 import Banner0 from './Banner0';
 import Content0 from './Content0';
-import Content5 from './Content5';
+// import Content5 from './Content5';
 import Content3 from './Content3';
 import Footer1 from './Footer1';
 
@@ -56,48 +56,49 @@ export default class Home extends React.Component {
   }
 
   render() {
+    const { isMobile } = this.state;
     const children = [
       <Nav0
         id="Nav0_0"
         key="Nav0_0"
         dataSource={Nav00DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
       <Banner0
         id="Banner0_1"
         key="Banner0_1"
         dataSource={Banner01DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
       <Content0
         id="Content0_0"
         key="Content0_0"
         dataSource={Content00DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
       <Content0
         id="Content6_0"
         key="Content6_0"
         dataSource={Content60DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
       // <Content5
       //   id="Content5_0"
       //   key="Content5_0"
       //   dataSource={Content50DataSource}
-      //   isMobile={this.state.isMobile}
+      //   isMobile={isMobile}
       // />,
       <Content3
         id="Content3_0"
         key="Content3_0"
         dataSource={Content30DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
       <Footer1
         id="Footer1_0"
         key="Footer1_0"
         dataSource={Footer10DataSource}
-        isMobile={this.state.isMobile}
+        isMobile={isMobile}
       />,
     ];
     return (

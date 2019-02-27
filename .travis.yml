@@ -8,6 +8,10 @@ cache:
   directories:
     - node_modules
 
+addons:
+    ssh_known_hosts: 
+      120.79.188.124
+
 before_install:
 #  配置git
   - git config --global user.name "fXy-during"

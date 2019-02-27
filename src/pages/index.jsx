@@ -1,7 +1,10 @@
+
 import Home from '../home';
 
-export default function () {
+const App =  function () {
   return (
     <Home />
   );
 }
+
+export default App;

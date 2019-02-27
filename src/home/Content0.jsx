@@ -3,7 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-class Content extends React.PureComponent {
+class Content0 extends React.PureComponent {
   getBlockChildren = (data) =>
     data.map((item, i) => {
       const children = item.children;
@@ -62,4 +62,4 @@ class Content extends React.PureComponent {
   }
 }
 
-export default Content;
+export default Content0;
