@@ -8,9 +8,14 @@ let Router = DefaultRouter;
 
 let routes = [
   {
+    "path": "/article",
+    "exact": true,
+    "component": require('../article/index.jsx').default
+  },
+  {
     "path": "/",
     "exact": true,
-    "component": require('../index.js').default
+    "component": require('../index/index.jsx').default
   },
   {
     "component": () => React.createElement(require('C:/Users/Administrator/AppData/Roaming/nvm/v9.8.0/node_modules/umi/node_modules/_umi-build-dev@1.5.5@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false })

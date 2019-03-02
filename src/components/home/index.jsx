@@ -63,6 +63,7 @@ export default class Home extends React.Component {
         key="Nav0_0"
         dataSource={Nav00DataSource}
         isMobile={isMobile}
+        selectedKey={["0"]}
       />,
       <Banner0
         id="Banner0_1"

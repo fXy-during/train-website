@@ -10,8 +10,8 @@ export const Nav00DataSource = {
   Menu: {
     className: 'header0-menu',
     children: [
-      { name: 'item0', a: { children: '导航一', href: '' } },
-      { name: 'item1', a: { children: '导航二', href: '' } },
+      { name: 'item0', a: { children: '首页', href: '/' } },
+      { name: 'item1', a: { children: '文章详情页', href: '/article' } },
       { name: 'item2', a: { children: '导航三', href: '' } },
       { name: 'item3', a: { children: '导航四', href: '' } },
     ],
@@ -107,6 +107,7 @@ export const Content60DataSource = {
   },
   block: {
     className: 'block-wrapper',
+    gutter: "16",
     children: [
       {
         name: 'block0',

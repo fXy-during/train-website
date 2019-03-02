@@ -31,9 +31,10 @@ class Header extends React.Component {
 
   render() {
     const { ...props } = this.props;
-    const { dataSource, isMobile } = props;
+    const { dataSource, isMobile, selectedKey } = props;
     delete props.dataSource;
     delete props.isMobile;
+    delete props.selectedKey;
     const { menuHeight, phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = Object.keys(navData).map((key, i) => (
@@ -86,6 +87,7 @@ class Header extends React.Component {
               mode={isMobile ? 'inline' : 'horizontal'}
               defaultSelectedKeys={['0']}
               theme={isMobile ? 'dark' : 'default'}
+              selectedKeys={selectedKey}
             >
               {navChildren}
             </Menu>
