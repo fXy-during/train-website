@@ -13,6 +13,16 @@ let routes = [
     "component": require('../article/index.jsx').default
   },
   {
+    "path": "/article/about",
+    "exact": true,
+    "component": require('../article/about.jsx').default
+  },
+  {
+    "path": "/article/contact",
+    "exact": true,
+    "component": require('../article/contact.jsx').default
+  },
+  {
     "path": "/",
     "exact": true,
     "component": require('../index/index.jsx').default

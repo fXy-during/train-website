@@ -1,7 +1,10 @@
 import React from 'react';
-import { Button, Icon } from 'antd';
+import { Button, Icon, Anchor } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
+
+
+const { Link } = Anchor;
 
 class Banner extends React.PureComponent {
   render() {
@@ -19,10 +22,10 @@ class Banner extends React.PureComponent {
         >
           <div key="title" {...dataSource.title}>
             {typeof dataSource.title.children === 'string'
-            && dataSource.title.children.match(
-              /\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/,
-            ) ? (
-              <img src={dataSource.title.children} width="100%" alt="img" />
+              && dataSource.title.children.match(
+                /\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/,
+              ) ? (
+                <img src={dataSource.title.children} width="100%" alt="img" />
               ) : (
                 dataSource.title.children
               )}
@@ -31,7 +34,13 @@ class Banner extends React.PureComponent {
             {dataSource.content.children}
           </div>
           <Button ghost key="button" {...dataSource.button}>
-            {dataSource.button.children}
+
+            <Anchor affix={false}>
+              <Link href="#Content3_0" title={dataSource.button.children}>
+
+                {/* {dataSource.button.children} */}
+              </Link>
+            </Anchor>
           </Button>
         </QueueAnim>
         <TweenOne

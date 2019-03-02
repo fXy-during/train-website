@@ -11,9 +11,8 @@ export const Nav00DataSource = {
     className: 'header0-menu',
     children: [
       { name: 'item0', a: { children: '首页', href: '/' } },
-      { name: 'item1', a: { children: '文章详情页', href: '/article' } },
-      { name: 'item2', a: { children: '导航三', href: '' } },
-      { name: 'item3', a: { children: '导航四', href: '' } },
+      { name: 'item1', a: { children: '关于我们', href: '/article/about' } },
+      { name: 'item2', a: { children: '联系我们', href: '/article/contact' } },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },
@@ -33,7 +32,7 @@ export const Banner01DataSource = {
       </span>
     ),
   },
-  button: { className: 'banner0-button', children: 'Learn More' },
+  button: { className: 'banner0-button', children: '了解更多' },
 };
 export const Content00DataSource = {
   wrapper: { className: 'home-page-wrapper content0-wrapper' },
@@ -103,7 +102,7 @@ export const Content60DataSource = {
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [{ name: 'title', children: '校区' }],
+    children: [{ name: 'title', children: '凌恒教育分校区' }],
   },
   block: {
     className: 'block-wrapper',
@@ -303,13 +302,13 @@ export const Content30DataSource = {
     children: [
       {
         name: 'title',
-        children: '蚂蚁金融云提供专业的服务',
+        children: '凌恒教育提供最专业的服务',
         className: 'title-h1',
       },
       {
         name: 'content',
         className: 'title-content',
-        children: '基于阿里云强大的基础资源',
+        children: '致力于优秀学生的培养',
       },
     ],
   },
@@ -339,7 +338,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '最新最全的考试政策，一览便知',
           },
         },
       },
@@ -366,7 +365,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '抓住考试的热点，不做盲目的复习',
           },
         },
       },
@@ -393,7 +392,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '海量题库，全方位服务',
           },
         },
       },
@@ -420,7 +419,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '完成学业从完成每一节课开始',
           },
         },
       },
@@ -447,7 +446,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '六大优势缔造行业领先',
           },
         },
       },
@@ -474,7 +473,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              '',
+              '联系电话：17358988432',
           },
         },
       },
@@ -606,9 +605,9 @@ export const Footer10DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2018 by
+        ©2019 by
         {' '}
-        <a href="https://motion.ant.design">Ant Motion</a>
+        <a href="">凌恒教育</a>
         {' '}
 All Rights
         Reserved
