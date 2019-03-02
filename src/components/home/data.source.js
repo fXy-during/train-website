@@ -11,8 +11,9 @@ export const Nav00DataSource = {
     className: 'header0-menu',
     children: [
       { name: 'item0', a: { children: '首页', href: '/' } },
-      { name: 'item1', a: { children: '关于我们', href: '/article/about' } },
-      { name: 'item2', a: { children: '联系我们', href: '/article/contact' } },
+      { name: 'item1', a: { children: '文章列表', href: '/categories' } },
+      { name: 'item2', a: { children: '关于我们', href: '/article/about' } },
+      { name: 'item3', a: { children: '联系我们', href: '/article/contact' } },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },

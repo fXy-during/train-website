@@ -34,7 +34,7 @@ export default class Aritcle extends React.PureComponent {
 
     render() {
         const { isMobile } = this.state;
-        const { articleId, selectedKey=["1"] } = this.props;
+        const { articleId, selectedKey=[] } = this.props;
         const { title, content } = ArticleMap[articleId || 1];
 
         return (
@@ -47,7 +47,6 @@ export default class Aritcle extends React.PureComponent {
                     selectedKey={selectedKey}
                 />
                 <div className="home-page-wrapper content0-wrapper article-wrapper" style={{ height: "auto" }}>
-
                     <div className="home-page content0">
                         <Row gutter={16}>
                             <Col span={18} md={18} xs={24}>
@@ -58,7 +57,6 @@ export default class Aritcle extends React.PureComponent {
                                     {content.map( (item, index) => <p key={index}> {item} </p>)}
                                 </section>
                             </Col>
-
                             <Col span={6} md={6} xs={24}>
                                 <SideBar />
                             </Col>

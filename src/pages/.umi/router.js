@@ -23,6 +23,11 @@ let routes = [
     "component": require('../article/contact.jsx').default
   },
   {
+    "path": "/categories",
+    "exact": true,
+    "component": require('../categories/index.jsx').default
+  },
+  {
     "path": "/",
     "exact": true,
     "component": require('../index/index.jsx').default
