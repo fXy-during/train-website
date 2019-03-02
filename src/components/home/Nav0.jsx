@@ -35,6 +35,8 @@ class Header extends React.Component {
     delete props.dataSource;
     delete props.isMobile;
     delete props.selectedKey;
+    delete props.gutter;
+    
     const { menuHeight, phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = Object.keys(navData).map((key, i) => (

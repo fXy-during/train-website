@@ -50,7 +50,7 @@ export default class Aritcle extends React.PureComponent {
 
                     <div className="home-page content0">
                         <Row gutter={16}>
-                            <Col span={18}>
+                            <Col span={18} xs={24}>
                                 <section className="article-title">
                                     {title}
                                 </section>
@@ -58,7 +58,8 @@ export default class Aritcle extends React.PureComponent {
                                     {content.map( (item, index) => <p key={index}> {item} </p>)}
                                 </section>
                             </Col>
-                            <Col span={6}>
+
+                            <Col span={6} xs={24}>
                                 <SideBar />
                             </Col>
                         </Row>
