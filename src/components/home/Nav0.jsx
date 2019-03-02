@@ -1,7 +1,7 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
-
+import Link from "umi/link";
 const Item = Menu.Item;
 
 class Header extends React.Component {
@@ -39,13 +39,13 @@ class Header extends React.Component {
     const navData = dataSource.Menu.children;
     const navChildren = Object.keys(navData).map((key, i) => (
       <Item key={i.toString()} {...navData[key]}>
-        <a
+        <Link
           {...navData[key].a}
-          href={navData[key].a.href}
+          to={navData[key].a.href}
           target={navData[key].a.target}
         >
           {navData[key].a.children}
-        </a>
+        </Link>
       </Item>
     ));
     return (
