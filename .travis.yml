@@ -20,6 +20,7 @@ after_success:
 - ls -al ~/.ssh
 - chmod 600 ~/.ssh/id_rsa
 - tar -zcf dist.tar.gz ./dist
+- ssh root@$TARGET_IP -o StrictHostKeyChecking=no 'exit'
 - scp dist.tar.gz root@$TARGET_IP:/www/
 - ssh root@$TARGET_IP -o StrictHostKeyChecking=no  'cd /www && rm -rf ./zhangDaYe
   && tar -xzf dist.tar.gz && rm -rf dist.tar.gz && mv dist zhangDaYe && exit 0'
