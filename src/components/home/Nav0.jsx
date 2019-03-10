@@ -41,13 +41,13 @@ class Header extends React.Component {
     const navData = dataSource.Menu.children;
     const navChildren = Object.keys(navData).map((key, i) => (
       <Item key={i.toString()} {...navData[key]}>
-        <Link
+        <a
           {...navData[key].a}
-          to={navData[key].a.href}
+          href={navData[key].a.href}
           target={navData[key].a.target}
         >
           {navData[key].a.children}
-        </Link>
+        </a>
       </Item>
     ));
     return (
